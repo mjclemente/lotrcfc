@@ -6,7 +6,7 @@ One API to rule them all - and this is the wrapper to use them. Just kidding. It
 
 ### Acknowledgements
 
-If you need to acknowledge the work of any other developers, do it here.
+This project borrows heavily from the API frameworks built by [jcberquist](https://github.com/jcberquist), such as [xero-cfml](https://github.com/jcberquist/xero-cfml) and [aws-cfml](https://github.com/jcberquist/aws-cfml). Because it draws on those projects, it is also licensed under the terms of the MIT license.
 
 ## Table of Contents
 
@@ -17,14 +17,46 @@ If you need to acknowledge the work of any other developers, do it here.
 The following is a minimal example of doing something helpful.
 
 ```cfc
-lordoftheringsapi = new path.to.lotrcfc.lordoftheringsapi( apiKey = 'xxx' );
+lotr = new path.to.lotrcfc.lordoftheringsapi( apiKey = 'xxx' );
 
-lordoftheringsapi.doSomething( argument );
+lotr.listQuotes();
 ```
 
 ## Reference Manual
 
-#### `doSomething( required type argument )`
-Briefly explain what it does.
+#### `listBooks()`
+List movies.
 
+#### `listMovies()`
+List movies.
+
+#### `listQuotes()`
+List quotes - there are a *lot* of them.
+
+#### `listCharacters()`
+List characters - again, very extensive, with in-depth information.
+
+#### `getBook( required string id )`
+Get a book by id. Returns the same information as seen in the list method.
+
+#### `getMovie( required string id )`
+Get a movie by id. Returns the same information as seen in the list method.
+
+#### `getQuote( required string id )`
+Get a quote by id. Returns the same information as seen in the list method. Includes the ID of the movie and character.
+
+#### `getCharacter( required string id )`
+Get a character by id. Returns the same information as seen in the list method.
+
+#### `getChapter( required string id )`
+Get a chapter by id. Currently does not include much information.
+
+#### `listChaptersByBook( required string id )`
+Lists all chapters in a book. Currently does not include much information.
+
+#### `listQuotesByMovie( required string id )`
+Lists all quotes in a movie.
+
+#### `listQuotesByCharacter( required string id )`
+Lists all quotes in a character.
 ---
