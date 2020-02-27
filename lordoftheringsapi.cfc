@@ -105,6 +105,13 @@ component displayname="lotrcfc"  {
     }
 
     /**
+    * @hint Retrieve a single chapter by ID.
+    */
+    public struct function getChapter( required string id ) {
+        return apiCall( 'GET', '/chapter/#id#' );
+    }
+
+    /**
     * @hint List chapters by book
     */
     public struct function listChaptersByBook( required string id ) {
@@ -123,13 +130,6 @@ component displayname="lotrcfc"  {
     */
     public struct function listQuotesByCharacter( required string id ) {
         return apiCall( 'GET', '/character/#id#/quote' );
-    }
-
-    /**
-    * @hint Retrieve a single chapter by ID.
-    */
-    public struct function getChapter( required string id ) {
-        return apiCall( 'GET', '/chapter/#id#' );
     }
 
     
