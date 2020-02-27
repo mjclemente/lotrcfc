@@ -1,6 +1,6 @@
 {
-    "author":"",
-    "bugs":"",
+    "author":"Matthew Clemente <mjclemente@gmail.com>",
+    "bugs":"https://github.com/mjclemente/lotrcfc/issues",
     "changelog":"",
     "contributors":[],
     "dependencies":{},
@@ -15,14 +15,14 @@
     ],
     "installPaths":{},
     "instructions":"",
-    "keywords":[],
+    "keywords":[ "lotr","api"],
     "license":[
         {
-            "type":"",
-            "URL":""
+            "type":"MIT",
+            "URL":"https://github.com/mjclemente/lotrcfc/blob/master/LICENSE"
         }
     ],
-    "location":"ForgeboxStorage",
+    "location":"mjclemente/lotrcfc#v1.0.0",
     "name":"lotrcfc",
     "private":false,
     "projectURL":"",
