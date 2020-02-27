@@ -59,4 +59,5 @@ Lists all quotes in a movie.
 
 #### `listQuotesByCharacter( required string id )`
 Lists all quotes in a character.
+
 ---
